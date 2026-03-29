@@ -13,10 +13,14 @@ Analyze historical stock data
 Build predictive models for short-term forecasting
 Compare multiple models
 Deploy an interactive web application for real-time predictions
+
 🧠 Models Used
+Random Forest
+Gradient Boosting
+Ridge Regression
+USED FOR APP
 Linear Regression
 Bayesian Ridge Regression
-
 Both models were selected due to their strong performance on structured financial data.
 
 📊 Key Results
@@ -86,8 +90,35 @@ It provides:
 Model performance metrics
 Actual vs predicted visualization
 Residual analysis
-Feature importance
-Next-day prediction
-Custom user input prediction
 
-👉 This is what users interact with
+
+📦 Requirements
+streamlit
+pandas
+numpy
+matplotlib
+scikit-learn
+yfinance
+
+💡 Key Insight 
+
+Even though advanced models like Random Forest and Gradient Boosting were tested:
+
+Simple linear models performed better
+Why?
+Stock prices in short-term follow strong linear trends
+Features are highly correlated
+Complex models overcomplicate simple patterns
+
+🔮 Future Improvements
+Add multiple stock selection (TSLA, MSFT, etc.)
+Add real-time stock API
+Improve UI with interactive charts
+
+🏁 Conclusion
+
+This project demonstrates that:
+
+Strong feature engineering > complex models
+Simpler models can outperform advanced ones
+End-to-end ML pipelines are essential for real-world applications
