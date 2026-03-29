@@ -136,3 +136,9 @@ This project demonstrates that:
 Strong feature engineering > complex models
 Simpler models can outperform advanced ones
 End-to-end ML pipelines are essential for real-world applications
+
+## 📱 App Demo
+
+You can check out a demo of the Apple Stock Prediction app [here](./appdemo.pdf).  
+
+![App Demo](./appdemo.pdf)
