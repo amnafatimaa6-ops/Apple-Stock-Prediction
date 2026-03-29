@@ -47,13 +47,21 @@ Other features have minimal impact
 📈 Project Structure
 apple-stock-prediction/
 │
-├── app.py                 # Streamlit app (UI + visualization)
-├── model.py               # ML training & prediction logic
-├── apple_stock.ipynb      # EDA + model development notebook
-├── requirements.txt       # Dependencies
-└── README.md              # Project documentation
+├── app.py        
+# Streamlit app (UI + visualization)
+├── model.py       
+# ML training & prediction logic
+├── apple_stock.ipynb 
+# EDA + model development notebook
+├── requirements.txt  
+# Dependencies
+└── README.md       
+# Project documentation
+
 📂 File Explanation
+
 📊 apple_stock.ipynb
+
 
 This is the research and development notebook.
 
