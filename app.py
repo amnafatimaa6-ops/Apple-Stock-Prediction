@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+import matplotlib.pyplot as plt
 
 from model import train_models, predict_next_day
 
@@ -53,17 +54,22 @@ st.dataframe(comparison_df)
 st.bar_chart(comparison_df.set_index("Model"))
 
 # -----------------------------
-# ACTUAL VS PREDICTED
+# ACTUAL VS PREDICTED (FIXED)
 # -----------------------------
 st.subheader("📉 Actual vs Predicted")
 
-chart_df = pd.DataFrame({
-    "Actual": data["y_test"].values,
-    "Linear": data["lr_pred"],
-    "Bayesian": data["bayes_pred"]
-})
+fig, ax = plt.subplots(figsize=(12,6))
 
-st.line_chart(chart_df)
+ax.plot(data["y_test"].values, label="Actual", linewidth=3)
+ax.plot(data["lr_pred"], label="Linear", linestyle="--", linewidth=2)
+ax.plot(data["bayes_pred"], label="Bayesian", linestyle=":", linewidth=2)
+
+ax.set_title("Actual vs Predicted Prices")
+ax.set_xlabel("Time")
+ax.set_ylabel("Price")
+ax.legend()
+
+st.pyplot(fig)
 
 # -----------------------------
 # RESIDUAL ANALYSIS
@@ -72,11 +78,14 @@ st.subheader("📉 Residual Analysis")
 
 residuals = data["y_test"].values - data["lr_pred"]
 
-res_df = pd.DataFrame({
-    "Residuals": residuals
-})
+fig2, ax2 = plt.subplots(figsize=(10,5))
+ax2.plot(residuals)
+ax2.axhline(0, linestyle='--')
+ax2.set_title("Residuals (Linear Model)")
+ax2.set_xlabel("Time")
+ax2.set_ylabel("Error")
 
-st.line_chart(res_df)
+st.pyplot(fig2)
 
 # -----------------------------
 # FEATURE IMPORTANCE
