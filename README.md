@@ -1,5 +1,4 @@
 # Apple-Stock-Prediction
-📌 Apple Stock Price Prediction App
 
 This project is an end-to-end Machine Learning application that predicts the next day’s closing price of Apple (AAPL) using historical stock data.
 
@@ -33,6 +32,7 @@ Bayesian Ridge	~1.67	~0.956
 Both models perform extremely well
 Predictions closely match actual stock prices
 Linear-based models outperform complex models in this setup
+
 ⚙️ Features Used
 Open, High, Low, Volume
 Previous Day Prices (Prev_Close, Prev_Open)
@@ -44,6 +44,7 @@ Daily Return
 
 Daily Return is the most influential feature
 Other features have minimal impact
+
 📈 Project Structure
 apple-stock-prediction/
 
