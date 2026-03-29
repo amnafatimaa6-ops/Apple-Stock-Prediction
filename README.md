@@ -46,7 +46,9 @@ Daily Return is the most influential feature
 Other features have minimal impact
 📈 Project Structure
 apple-stock-prediction/
-│
+
+
+
 ├── app.py        
 # Streamlit app (UI + visualization)
 ├── model.py       
