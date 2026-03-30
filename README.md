@@ -130,8 +130,11 @@ Features are highly correlated
 Complex models overcomplicate simple patterns
 
 🔮 Future Improvements
+
 Add multiple stock selection (TSLA, MSFT, etc.)
+
 Add real-time stock API
+
 Improve UI with interactive charts
 
 🏁 Conclusion
