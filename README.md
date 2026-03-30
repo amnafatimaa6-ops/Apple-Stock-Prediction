@@ -139,6 +139,8 @@ Improve UI with interactive charts
 This project demonstrates that:
 
 Strong feature engineering > complex models
+
 Simpler models can outperform advanced ones
+
 End-to-end ML pipelines are essential for real-world applications
 
