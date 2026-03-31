@@ -7,6 +7,9 @@ https://apple-stock-prediction-dotx9tv4d5trz4vkeccjwj.streamlit.app/
 
 ![App Demo](./appdemo.pdf)
 
+Research Papers
+
+
 
 This project is an end-to-end Machine Learning application that predicts the next day’s closing price of Apple (AAPL) using historical stock data.
 
