@@ -7,7 +7,11 @@ https://apple-stock-prediction-dotx9tv4d5trz4vkeccjwj.streamlit.app/
 
 ![App Demo](./appdemo.pdf)
 
-Research Papers
+## 📄 Research Paper
+
+You can read the full research paper for this project here:  
+
+[Apple Stock Research Paper (PDF)](./Apple-stock-ResearchPaper.pdf)
 
 
 
